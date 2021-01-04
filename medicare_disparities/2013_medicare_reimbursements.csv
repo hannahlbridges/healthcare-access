@@ -1,0 +1,54 @@
+year,geography,measure,adjustment,analysis,domain,condition,primary_sex,primary_age,primary_dual,fips,state,primary_race,primary_eligibility,primary_denominator,analysis_value
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,1,ALABAMA,All,All,undefined,8156
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,2,ALASKA,All,All,undefined,15453
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,4,ARIZONA,All,All,undefined,10875
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,5,ARKANSAS,All,All,undefined,8281
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,6,CALIFORNIA,All,All,undefined,13999
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,8,COLORADO,All,All,undefined,10625
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,9,CONNECTICUT,All,All,undefined,12364
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,10,DELAWARE,All,All,undefined,11374
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,11,DISTRICT OF COLUMBIA,All,All,undefined,12712
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,12,FLORIDA,All,All,undefined,9178
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,13,GEORGIA,All,All,undefined,9297
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,15,HAWAII,All,All,undefined,13375
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,16,IDAHO,All,All,undefined,10635
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,17,ILLINOIS,All,All,undefined,9788
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,18,INDIANA,All,All,undefined,9300
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,19,IOWA,All,All,undefined,9112
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,20,KANSAS,All,All,undefined,8712
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,21,KENTUCKY,All,All,undefined,8800
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,22,LOUISIANA,All,All,undefined,9322
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,23,MAINE,All,All,undefined,9416
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,24,MARYLAND,All,All,undefined,12271
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,25,MASSACHUSETTS,All,All,undefined,11625
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,26,MICHIGAN,All,All,undefined,10372
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,27,MINNESOTA,All,All,undefined,10533
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,28,MISSISSIPPI,All,All,undefined,8756
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,29,MISSOURI,All,All,undefined,9166
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,30,MONTANA,All,All,undefined,9712
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,31,NEBRASKA,All,All,undefined,9380
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,32,NEVADA,All,All,undefined,11358
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,33,NEW HAMPSHIRE,All,All,undefined,10240
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,34,NEW JERSEY,All,All,undefined,11012
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,35,NEW MEXICO,All,All,undefined,10361
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,36,NEW YORK,All,All,undefined,13068
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,37,NORTH CAROLINA,All,All,undefined,9915
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,38,NORTH DAKOTA,All,All,undefined,9581
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,39,OHIO,All,All,undefined,9303
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,40,OKLAHOMA,All,All,undefined,9032
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,41,OREGON,All,All,undefined,11502
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,42,PENNSYLVANIA,All,All,undefined,9833
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,44,RHODE ISLAND,All,All,undefined,10663
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,45,SOUTH CAROLINA,All,All,undefined,9787
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,46,SOUTH DAKOTA,All,All,undefined,9486
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,47,TENNESSEE,All,All,undefined,8504
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,48,TEXAS,All,All,undefined,10077
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,49,UTAH,All,All,undefined,9876
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,50,VERMONT,All,All,undefined,11686
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,51,VIRGINIA,All,All,undefined,9467
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,53,WASHINGTON,All,All,undefined,11476
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,54,WEST VIRGINIA,All,All,undefined,8949
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,55,WISCONSIN,All,All,undefined,9939
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,56,WYOMING,All,All,undefined,11502
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,69,NORTHERN MARIANAS,All,All,undefined,6072
+2013,State/Territory,Medicare Reimbursement,Unsmoothed actual,Base measure,Primary chronic conditions,Medicare Reimbursement,All,All,Dual & non-dual,72,PUERTO RICO,All,All,undefined,5876
