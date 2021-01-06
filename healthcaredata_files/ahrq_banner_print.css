@@ -1,0 +1,19 @@
+/*
+ * $Log: /statesnapshots/web/statesnapshots/css/ahrq_banner_print.css $
+ * 
+ * 1     2/11/08 12:08p Dbyington
+ * New banner from AHRQ.
+ *
+ */
+@media print {  /* define CSS for print output only */
+    #ahrqbanner {
+        display:none;
+    }
+
+    #PrintBanner {
+        display:block;
+        width:100%;
+        margin:0;
+        float:none;
+    }
+}
