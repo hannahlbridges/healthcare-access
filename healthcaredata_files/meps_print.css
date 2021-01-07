@@ -1,0 +1,29 @@
+
+img {
+ border:none;
+}
+
+#ForScreen {
+    display:none;
+}
+
+#NavigationContainer {
+    text-align:center;
+}
+
+#NavigationContainer a {
+    text-decoration:none; 
+    font-size:12px; 
+    border-right:1px solid #000000; 
+    padding:0 6px; 
+    color:black; 
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#NavigationContainer a#Last {
+    border:none;
+}
+
+.ahrqlinks {
+    border:none;
+}

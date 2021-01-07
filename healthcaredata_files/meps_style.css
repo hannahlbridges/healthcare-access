@@ -1,0 +1,754 @@
+/* import AHRQ header/footer CSS. Must be first rules in the file */
+@import "ahrq_banner.css";
+@import "ahrq_banner_print.css";
+
+body {
+font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size:0.7em;
+line-height:1.3em;
+background-color:#FFF;
+margin:0;
+}
+
+.bodystyle {
+font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+color:#0640A1;
+}
+
+.contentStyle {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+color:#000;
+}
+
+.plainTextStyle {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+color:#000;
+padding-left:20px;
+}
+
+.xxsmall {
+font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size:.50em;
+color:#0741A2;
+line-height:.50em;
+}
+
+.xsmall {
+font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size:.80em;
+color:#000000;
+line-height:1.5em;
+}
+
+
+.small {
+font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size:.9em;
+color:#0741A2;
+}
+
+.medium {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:1.1em;
+color:#053FA0;
+font-weight:700;
+}
+
+.big {
+font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size: 16px;
+font-weight:bolder;
+line-height:1.1em;
+color:#000;
+}
+
+.OrangeBox {
+background-color:#FFF7DF;
+border-top-color:#FDDC8D;
+border-top-style:solid;
+border-top-width:1px;
+border-bottom-style:solid;
+border-bottom-color:#FDDC8D;
+border-right-width:1px;
+color:#0640A1;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+border-bottom-width:1px;
+padding:4px;
+}
+
+a:hover {
+text-decoration:none;
+color:#0741A2;
+}
+
+a:active {
+color:#0741A2;
+text-decoration:none;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+a.topNav:link {
+color:#0741A2;
+text-decoration:none;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:.9em;
+font-style:normal;
+font-variant:normal;
+font-weight:400;
+line-height:normal;
+}
+
+a.topNav:visited {
+color:#0741A2;
+text-decoration:none;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:.9em;
+font-style:normal;
+line-height:normal;
+border-bottom-style:none;
+border-bottom-width:0;
+font-weight:400;
+font-variant:normal;
+}
+
+a.topNav:hover {
+border-top:1px dotted #0640A1; border-bottom:0px none #0640A3; color:#0741A2;
+text-decoration:none;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:.9em;
+font-style:normal;
+font-variant:normal;
+font-weight:400;
+line-height:normal;
+background-color:#EEF5FF
+}
+
+a.topNav:active {
+color:#0741A2;
+text-decoration:none;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:.9em;
+font-style:normal;
+line-height:normal;
+border-bottom-style:none;
+border-bottom-width:0;
+font-weight:400;
+}
+
+a.toplink:hover {
+border-bottom-color:#00007B;
+font-size:11px;
+color:#00007B;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+line-height:normal;
+font-style:normal;
+border-bottom-style:dashed;
+border-bottom-width:1px;
+text-decoration:none;
+background-color:#EEE6F0;
+}
+
+a.blackLink:link {
+color:#000;
+text-decoration:none;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-style:normal;
+font-variant:normal;
+font-weight:400;
+line-height:normal;
+font-size:11px;
+}
+
+a.blackLink:visited {
+color:#000;
+text-decoration:none;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-style:normal;
+line-height:normal;
+border-bottom-style:none;
+border-bottom-width:0;
+font-weight:400;
+font-variant:normal;
+}
+
+a.blackLink:hover {
+color:#000;
+text-decoration:underline;
+border-bottom-width:0;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-style:normal;
+font-variant:normal;
+font-weight:400;
+line-height:normal;
+border-top-style:none;
+border-top-width:0;
+border-bottom-style:none;
+}
+
+a.blackLink:active {
+color:#000;
+text-decoration:none;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-style:normal;
+line-height:normal;
+border-bottom-style:none;
+border-bottom-width:0;
+font-weight:400;
+}
+
+.sidebarLineHeight {
+line-height:1.3em;
+color:#053DAC;
+}
+
+submit {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:1.1em;
+color:#060;
+background-color:#EAEAEA;
+border:1px solid #999;
+font-weight:700;
+}
+
+.sectionDivider {
+border-bottom-style:solid;
+border-left-style:none;
+border-top-style:none;
+border-color:#64ADF1 #64ADF1 #333699 #D8D8D8;
+border-width:1px;
+}
+
+.sectionDividerGreySolid {
+border-bottom-style:solid;
+border-left-style:none;
+border-top-style:none;
+border-color:#FFF #FFF #C4C4C4;
+border-width:1px;
+}
+
+.sectionDividerGreySolidThick {
+border-bottom-style:solid;
+border-left-style:none;
+border-top-style:none;
+border-color:#FFF #FFF #33379B;
+border-width:1px 1px 2px;
+}
+
+.sectionDividerGrey {
+border-bottom-style:solid;
+border-left-style:none;
+border-top-style:none;
+border-color:#999 #999 #CCC;
+border-width:1px;
+}
+
+.sectionDividerGreyDotted {
+border-bottom-style:dotted;
+border-left-style:none;
+border-top-style:none;
+border-color:#999;
+border-width:1px;
+}
+
+.sectionDividerWhite {
+border-bottom-style:solid;
+border-left-style:none;
+border-top-style:none;
+border-color:#FFF;
+border-width:1px;
+}
+
+.listNumbers {
+list-style-type:decimal;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+line-height:1.4em;
+
+}
+
+.listBullet {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+list-style-image:url('../images/bullets/blue_bullet.gif');
+line-height:1.4em
+}
+
+.sidebarStyleHeaderFont {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
+font-weight:lighter;
+color:#456DC0;
+}
+
+.sidebarSmall {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
+color:#000;
+border-left-width:thin;
+border-right-color:#CCC;
+font-style:normal;
+background-color:#FFF;
+}
+
+.select {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:.9em;
+background-color:#FFF;
+color:#0741A2;
+border:1px solid #284279;
+}
+
+.boxOrange {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+filter:progid:DXImageTransform.Microsoft.Gradient (GradientType=0,StartColorStr='#ffffffff',EndColorStr='#FEEDBF');
+background:#FFEEC0;
+background-color:#FFF7E1;
+border-color:#FC6;
+border-style:solid;
+border-width:1px;
+}
+
+.boxOrangeNoBorder {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+filter:progid:DXImageTransform.Microsoft.Gradient GradientType=0,StartColorStr='#ffffffff',EndColorStr='#FEF2C2');
+border-bottom-color:#FC6;
+border-bottom-style:solid;
+border-bottom-width:1px;
+border-top-color:#FC6;
+border-top-style:solid;
+border-top-width:1px;
+}
+
+.barPurple {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
+filter:progid:DXImageTransform.Microsoft.Gradient (GradientType=1,StartColorStr='#ffffffffff',EndColorStr='#6A066A');
+border-bottom-color:#6A066A;
+border-bottom-style:solid;
+border-bottom-width:1px;
+color:#FFF;
+}
+
+.boxGreyNoBorder {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+filter:progid:DXImageTransform.Microsoft.Gradient (GradientType=0,StartColorStr='#ffffffff',EndColorStr='#E5E5E5');
+border-bottom-color:#EAEAEA;
+border-bottom-style:solid;
+border-bottom-width:1px;
+border-top-color:#F2F2F2;
+border-top-style:solid;
+border-top-width:1px;
+}
+
+.boxBlueNoBorder {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+filter:progid:DXImageTransform.Microsoft.Gradient (GradientType=0,StartColorStr='#ffffffff',EndColorStr='#8BA8E2');
+}
+
+.boxBlue {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+filter:progid:DXImageTransform.Microsoft.Gradient (GradientType=0,StartColorStr='#ffffffff',EndColorStr='#EEF5FD');
+background-color:#EEF5FD;
+border-color:#CAE2F9;
+border-style:solid;
+border-width:1px;
+}
+
+.BlueBox {
+background-color:#ECF1FB;
+border-top-color:#DEE6F8;
+border-top-style:solid;
+border-bottom-style:solid;
+border-bottom-color:#DEE6F8;
+color:#0640A1 !important;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+border-width:1px;
+padding:4px;
+}
+
+.layoutTable {
+border:1px solid #DDE6F7;
+border-top-style:none;
+border-bottom-style:none;
+}
+
+.greyBox {
+border-color:#666666;
+/*border-color:#CCC; 5/10/19 change to 666666 so that sb box*/
+border-style:solid;
+border-width:1px;
+}
+
+.rightBorder {
+border-right-style:solid;
+margin-right:0;
+border-color:#CCC;
+border-width:1px;
+}
+
+.navHeader {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-weight:700;
+color:#33379B;
+}
+
+.leftBorder {
+border-left-style:solid;
+margin-left:0;
+border-color:#CCC;
+border-width:1px;
+}
+
+.leftBorderThick {
+border-left-width:2px;
+border-left-style:solid;
+border-left-color:#999;
+margin-left:0;
+}
+
+.uppderDivider {
+border-top:1px solid #CCC;
+}
+
+.navdivider {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:9px;
+color:#600;
+}
+
+ul {
+list-style-type:square;
+color:#333;
+    margin-top: 10px !important;
+}
+
+.purpleHeader {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:13px;
+font-weight:700;
+color:#650062;
+}
+
+.rightbar {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
+color:#0640A1;
+line-height:15px;
+}
+
+.bottomRightgrayBorder {
+border-right-style:solid;
+border-bottom-style:solid;
+border-color:#CCC;
+border-width:1px;
+}
+
+.bottomLeftgrayBorder {
+border-left-style:solid;
+border-bottom-style:solid;
+border-color:#CCC;
+border-width:1px;
+}
+
+.ErrorCheck {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
+font-weight:700;
+color:#CC6666;
+}
+
+.greenTitle {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:700;
+color:#060;
+}
+
+.defaultFont {
+font-size:11px;
+font-weight:700;
+color:#33379B;
+}
+
+.bigFont {
+font-size:13px;
+font-weight:700;
+color:#33379B;
+}
+
+.biggestFont {
+font-size:15px;
+font-weight:700;
+color:#33379B;
+}
+
+a:link, a:visited {
+color:#0741A2;
+text-decoration:underline;
+}
+
+a.toplink:link, a.toplink:active, a.toplink:visited {
+border-bottom-color:#00007B;
+font-size:11px;
+color:#00007B;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+line-height:normal;
+font-style:normal;
+border-bottom-style:dashed;
+border-bottom-width:1px;
+text-decoration:none;
+}
+
+select, .smallGreen {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:1em;
+color:#060;
+}
+
+.smallBlack, .sidebarStyle {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:.9em;
+color:#000;
+}
+.smallbigBlack{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:1em;
+color:#000;
+
+}
+
+
+a.LeftNav:link, a.LeftNav:visited, a.LeftNav:active {
+font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size:0.85em;
+color:#0741A2;
+text-decoration:none;
+}
+
+a.LeftNav:hover{
+font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size:0.85em;
+color:#0741A2;
+text-decoration:underline;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Styles used for both static and dynamic data tables                        */
+/*----------------------------------------------------------------------------*/
+
+/*dataTable should be used in the <TABLE> tag of every data table*/
+.dataTable, .dt{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:1.00em;
+color:#000;
+}
+
+/*dtCaption should be used in the <CAPTION> tag of every data table*/
+.dtCaption{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:1.1em;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+/*dtColumnHeader or dtColumnHeaderUnderline should be used in every <TH> tag 
+  in the table header of a data table.  dtColumnHeaderUnderline contains a 
+  bottom border and has additional top and bottom spacing */
+.dtColumnHeader{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:1em;
+color:#000;
+font-weight: normal;
+padding-left:0.4em;
+padding-right:0.4em;
+}
+
+.dtColumnHeaderUnderline{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:1em;
+color:#000;
+border-bottom-style:solid;
+border-bottom-width:1px;
+border-bottom-color:#000;
+padding-top:0.5em;
+padding-bottom:0.5em;
+padding-left:0.4em;
+padding-right:0.4em;
+font-weight: normal;
+}
+
+/*dtRowStub dtRowStubGroup or dtRowStubTotal should be used in every <TH> tag 
+  in the table body of a data table.  These three styles are currently 
+  identical, but can be changed later.  dtRowStubGroup should be used as the  
+  style for row stub group headers in tables with multi-level row headers.
+  dtRowStubTotal should be used as the style for total lines in tables with 
+  multi-level row headers.  (Total lines would be lines containing data 
+  that are not part of a group of rows.)  All other row stub cells should
+  have the dtRowStub style. */
+.dtRowStub{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:1em;
+color:#000;
+padding-top:0.25em;
+padding-bottom:0.25em;
+text-align:left;
+font-weight: normal;
+}
+
+.dtRowStubGroup{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:1em;
+color:#000;
+padding-top:0.25em;
+padding-bottom:0.25em;
+text-align:left;
+font-weight: normal;
+}
+
+.dtRowStubTotal{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:1em;
+color:#000;
+padding-top:0.25em;
+padding-bottom:0.25em;
+text-align:left;
+font-weight: normal;
+}
+
+/*The following styles can be used in a <TD> class attribute or added as a 
+  second style in a <TH> class attribute.  dtIndent could be used to indent 
+  row stubs that are members of a row stub group.  dtRowSpace could be used in
+  all cells in a row to add space between the row and the preceeding row.  */
+.dtRightAlign{
+text-align:right;
+}
+
+.dtIndent{
+padding-left:1.5em;
+}
+
+.dtRowSpace{
+vertical-align:text-bottom;
+padding-top:1.5em;
+}
+
+.dtRIndent1{
+padding-right:0.5em;
+}
+
+.dtRIndent2{
+padding-right:1.0em;
+}
+
+.dtRIndent3{
+padding-right:1.5em;
+}
+
+.dtRIndent4{
+padding-right:2.0em;
+}
+
+.dtRIndent5{
+padding-right:2.5em;
+}
+
+.textbox {
+	width: 440px;
+	border: 1px solid #8ca7c0;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 1px 2px;
+}
+
+.textbox_small {
+  float: left;
+	width: 50px;
+	border: 1px solid #8ca7c0;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 1px 2px;
+ }
+ 
+ .textbox_medium {
+  float: left;
+	width: 200px;
+	border: 1px solid #8ca7c0;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 1px 2px;
+ }
+
+ 
+ .textbox_large {
+  float: left;
+	width: 300px;
+	border: 1px solid #8ca7c0;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 1px 2px;
+ }
+ 
+ 
+ .textbox_xlarge {
+  float: left;
+	width: 440px;
+	border: 1px solid #8ca7c0;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 1px 2px;
+ }
+fieldset {
+   border:0 none;
+}
+.element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+}
+
+/**
+ * The .element-focusable class extends the .element-invisible class to allow
+ * the element to be focusable when navigated to via the keyboard.
+ */
+.element-invisible.element-focusable:active,
+.element-invisible.element-focusable:focus {
+  position: static !important;
+  clip: auto;
+  overflow: visible;
+  height: auto;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+label {
+    display: inline !important;
+    padding: 5px !important;
+}
+caption{
+    color: #000 !important;
+    padding-bottom: 0 !important;
+    caption-side: top !important;
+ }
