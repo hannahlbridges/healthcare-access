@@ -26,7 +26,7 @@ class state_data(db.Model):
     state_abbreviation = db.Column(db.String(3), primary_key =True)
     state_name = db.Column(db.String(50))
     expanded_medicaid = db.Column(db.Boolean)
-    date_expanded = db.Column(db.Datetime)
+    date_expanded = db.Column(db.DateTime)
     percent_insured = db.Column(db.Integer)
     percent_uninsured = db.Column(db.Integer)
     population_millions = db.Column(db.Integer)
