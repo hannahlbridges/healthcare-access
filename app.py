@@ -4,6 +4,12 @@ from os import environ
 
 app = Flask(__name__)
 
+app.config['SQLALCHEMY_DATABASE_URI'] = environ.get(
+    'DATABASE_URL', 'sqlite:///notepad.sqlite')
+    
+db = SQLAlchemy(app)
+
+
 @app.route('/')
 def index():
     return "Hello world!"
