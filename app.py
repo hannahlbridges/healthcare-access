@@ -47,18 +47,116 @@ class insurance_type_percent(db.Model):
     private = db.Column(db.Integer)
     uninsured = db.Column(db.Integer)
 
-class MEPS_data(db.Model):
+
+class percent_employees_off(db.Model):
     state_name = db.Column(db.String(3), primary_key = True)
-    percent_employees_offer = db.Column(db.Float)
-    percent_enrolled_eligible = db.Column(db.Float)
-    percent_enrolled_offer = db.Column(db.Float)
-    percent_self_insured = db.Column(db.Float)
-    avg_single_contribution = db.Column(db.Float)
-    avg_single_premium = db.Column(db.Float)
-    avg_emp1_contribution = db.Column(db.Float)
-    avg_emp1_premium = db.Column(db.Float)
-    avg_family_contribution = db.Column(db.Float)
-    avg_family_premium = db.Column(db.Float)
+    _2013 = db.Column(db.Float)
+    _2014 = db.Column(db.Float)
+    _2015 = db.Column(db.Float)
+    _2016 = db.Column(db.Float)
+    _2017 = db.Column(db.Float)
+    _2018 = db.Column(db.Float)
+    _2019 = db.Column(db.Float)
+
+class percent_enrolled_eligible(db.Model):
+    state_name = db.Column(db.String(3), primary_key = True)
+    _2013 = db.Column(db.Float)
+    _2014 = db.Column(db.Float)
+    _2015 = db.Column(db.Float)
+    _2016 = db.Column(db.Float)
+    _2017 = db.Column(db.Float)
+    _2018 = db.Column(db.Float)
+    _2019 = db.Column(db.Float)
+
+class percent_enrolled_eligible(db.Model):
+    state_name = db.Column(db.String(3), primary_key = True)
+    _2013 = db.Column(db.Float)
+    _2014 = db.Column(db.Float)
+    _2015 = db.Column(db.Float)
+    _2016 = db.Column(db.Float)
+    _2017 = db.Column(db.Float)
+    _2018 = db.Column(db.Float)
+    _2019 = db.Column(db.Float)
+
+class percent_enrolled_offer(db.Model):
+    state_name = db.Column(db.String(3), primary_key = True)
+    _2013 = db.Column(db.Float)
+    _2014 = db.Column(db.Float)
+    _2015 = db.Column(db.Float)
+    _2016 = db.Column(db.Float)
+    _2017 = db.Column(db.Float)
+    _2018 = db.Column(db.Float)
+    _2019 = db.Column(db.Float)
+
+class percent_self_insured(db.Model):
+    state_name = db.Column(db.String(3), primary_key = True)
+    _2013 = db.Column(db.Float)
+    _2014 = db.Column(db.Float)
+    _2015 = db.Column(db.Float)
+    _2016 = db.Column(db.Float)
+    _2017 = db.Column(db.Float)
+    _2018 = db.Column(db.Float)
+    _2019 = db.Column(db.Float)
+
+class avg_single_contribution(db.Model):
+    state_name = db.Column(db.String(3), primary_key = True)
+    _2013 = db.Column(db.Float)
+    _2014 = db.Column(db.Float)
+    _2015 = db.Column(db.Float)
+    _2016 = db.Column(db.Float)
+    _2017 = db.Column(db.Float)
+    _2018 = db.Column(db.Float)
+    _2019 = db.Column(db.Float)
+
+class avg_single_premium(db.Model):
+    state_name = db.Column(db.String(3), primary_key = True)
+    _2013 = db.Column(db.Float)
+    _2014 = db.Column(db.Float)
+    _2015 = db.Column(db.Float)
+    _2016 = db.Column(db.Float)
+    _2017 = db.Column(db.Float)
+    _2018 = db.Column(db.Float)
+    _2019 = db.Column(db.Float)
+
+class avg_emp1_contribution(db.Model):
+    state_name = db.Column(db.String(3), primary_key = True)
+    _2013 = db.Column(db.Float)
+    _2014 = db.Column(db.Float)
+    _2015 = db.Column(db.Float)
+    _2016 = db.Column(db.Float)
+    _2017 = db.Column(db.Float)
+    _2018 = db.Column(db.Float)
+    _2019 = db.Column(db.Float)
+
+class avg_emp1_premium(db.Model):
+    state_name = db.Column(db.String(3), primary_key = True)
+    _2013 = db.Column(db.Float)
+    _2014 = db.Column(db.Float)
+    _2015 = db.Column(db.Float)
+    _2016 = db.Column(db.Float)
+    _2017 = db.Column(db.Float)
+    _2018 = db.Column(db.Float)
+    _2019 = db.Column(db.Float)
+
+class avg_family_contribution(db.Model):
+    state_name = db.Column(db.String(3), primary_key = True)
+    _2013 = db.Column(db.Float)
+    _2014 = db.Column(db.Float)
+    _2015 = db.Column(db.Float)
+    _2016 = db.Column(db.Float)
+    _2017 = db.Column(db.Float)
+    _2018 = db.Column(db.Float)
+    _2019 = db.Column(db.Float)
+
+class avg_family_premium(db.Model):
+    state_name = db.Column(db.String(3), primary_key = True)
+    _2013 = db.Column(db.Float)
+    _2014 = db.Column(db.Float)
+    _2015 = db.Column(db.Float)
+    _2016 = db.Column(db.Float)
+    _2017 = db.Column(db.Float)
+    _2018 = db.Column(db.Float)
+    _2019 = db.Column(db.Float)
    
 
 @app.route('/')
