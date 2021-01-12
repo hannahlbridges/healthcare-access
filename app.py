@@ -112,7 +112,7 @@ class avg_single_premium(db.Model):
     _2019 = db.Column(db.Float)
 
 class avg_emp1_contribution(db.Model):
-    state_name = db.Column(db.String(3), primary_key = True)
+    State = db.Column(db.String(3), primary_key = True)
     _2013 = db.Column(db.Float)
     _2014 = db.Column(db.Float)
     _2015 = db.Column(db.Float)
