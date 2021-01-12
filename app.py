@@ -51,15 +51,15 @@ class percent_employees_off(db.Model):
     _2018 = db.Column(db.Float)
     _2019 = db.Column(db.Float)
 
-# class percent_enrolled_eligible(db.Model):
-#     state_name = db.Column(db.String(3), primary_key = True)
-#     _2013 = db.Column(db.Float)
-#     _2014 = db.Column(db.Float)
-#     _2015 = db.Column(db.Float)
-#     _2016 = db.Column(db.Float)
-#     _2017 = db.Column(db.Float)
-#     _2018 = db.Column(db.Float)
-#     _2019 = db.Column(db.Float)
+class percent_eligible(db.Model):
+    state_name = db.Column(db.String(3), primary_key = True)
+    _2013 = db.Column(db.Float)
+    _2014 = db.Column(db.Float)
+    _2015 = db.Column(db.Float)
+    _2016 = db.Column(db.Float)
+    _2017 = db.Column(db.Float)
+    _2018 = db.Column(db.Float)
+    _2019 = db.Column(db.Float)
 
 class percent_enrolled_eligible(db.Model):
     state_name = db.Column(db.String(3), primary_key = True)
