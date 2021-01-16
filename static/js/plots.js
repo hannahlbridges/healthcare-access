@@ -38,3 +38,41 @@ var layout = {
     };
     
 Plotly.newPlot("plot", data, layout);
+
+// Cluster Bar Chart for Regional Uninsured and Poor Health
+// chart.js
+
+var ctx = document.getElementById("myChart").getContext("2d");
+
+var data = {
+    labels: ["Northeast", "Southeast", "Northwest", "Southwest"],
+    datasets: [
+        {
+            label: "Percent Uninsured",
+            backgroundColor: "blue",
+            data: []
+            //data pulled from regional table
+        },
+        {
+            label: "Percent in Poor Health",
+            backgroundColor: "green",
+            data: []
+            //data pulled from regional table
+        },
+    ]
+};
+
+var myBarChart = new Chart(ctx, {
+    type: 'bar',
+    data: data,
+    options: {
+        barValueSpacing: 20,
+        scales: {
+            yAxes: [{
+                ticks: {
+                    min: 0,
+                }
+            }]
+        }
+    }
+});
