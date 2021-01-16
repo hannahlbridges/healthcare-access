@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
 from os import environ
 
@@ -160,9 +160,9 @@ class avg_family_premium(db.Model):
     _2019 = db.Column(db.Float)
 
 
-#@app.route('/')
-#def index():
-#    render_template('index.html')
+@app.route('/')
+def home():
+    return render_template('index.html')
     
 @app.route('/api/state-data-postgres')
 def getstate_dataPostgres():
@@ -172,12 +172,12 @@ def getstate_dataPostgres():
         item = {
             'state': state_data.State,
             'expansion_status': state_data.Expansion_Status,
-            'date_expanded': state_data.Date_Added,
+            'date_added': state_data.Date_Added,
             'median_income': state_data.Median_Income,
             'state_spending': state_data.State_Spending,
             'local_spending': state_data.Local_Spending,
-            'state_local_spending':state_data.State_and_Local_spending,
-            'population': state_data.Population_Millions,
+            'state_and_local_spending':state_data.State_and_Local_spending,
+            'population_millions': state_data.Population_Millions,
             'uninsured_2010': state_data.Uninsured_2010,
             'uninsured_2018': state_data.Uninsured_2018,
             'uninsured_2019': state_data.Uninsured_2019
