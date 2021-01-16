@@ -9,6 +9,13 @@ app.config['SQLALCHEMY_DATABASE_URI'] = environ.get(
 
 db = SQLAlchemy(app)
 
+class medicare(db.Model):
+    state_name = db.Column(db.String(3), primary_key=True)
+    avg_cost_stroke_2018 = db.Column(db.Float)
+    avg_cost_stroke_2013 = db.Column(db.Float)
+    avg_cost_ha_2018 = db.Column(db.Float)
+    avg_cost_ha_2013 = db.Column(db.Float)
+
 class regional(db.Model):
     state = db.Column(db.String(3), primary_key =True)
     region = db.Column(db.String(20))
@@ -59,7 +66,7 @@ class percent_employees_off(db.Model):
     _2018 = db.Column(db.Float)
     _2019 = db.Column(db.Float)
 
-class percent_eligible(db.Model):
+class percent_enrolled_eligible(db.Model):
     state_name = db.Column(db.String(3), primary_key = True)
     _2013 = db.Column(db.Float)
     _2014 = db.Column(db.Float)
@@ -158,6 +165,7 @@ class avg_family_premium(db.Model):
     _2017 = db.Column(db.Float)
     _2018 = db.Column(db.Float)
     _2019 = db.Column(db.Float)
+   
 
 
 @app.route('/')
