@@ -27,11 +27,28 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://d3js.org/d3.v6.min.js"></script>
+    <link rel="stylesheet" href="../static/css/styles.css">
   </head>
   <body>
-    <nav class="navbar navbar-light bg-light">
-      <span class="navbar-brand mb-0 h1">Healthcare Access</span>
-    </nav>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Medicaid Expansion</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Maps</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="collaborators.html">Collaborators</a>
+          </li>
+        </ul>
+      </div>
+    </nav> 
+  
     <div class="container">
       <ul id="tasks" class="list-group"></ul>
     </div>
@@ -47,6 +64,33 @@
              </div>   
         </div>
     </div>
+
+    <div id="state-heading" class="container">
+      <div class="row align-items-center">
+        <div class="col-4">
+          <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown link
+            </a>
+          
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-8">
+          State Data
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
     <script src="static/js/main.js"></script>
   </body>
 </html>
