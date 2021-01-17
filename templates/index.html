@@ -27,14 +27,101 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://d3js.org/d3.v6.min.js"></script>
+    <link rel="stylesheet" href="../static/css/styles.css">
   </head>
+
+
+
   <body>
-    <nav class="navbar navbar-light bg-light">
-      <span class="navbar-brand mb-0 h1">Healthcare Access</span>
-    </nav>
-    <div class="container">
-      <ul id="tasks" class="list-group"></ul>
+   
+
+  <!--Navbar Code-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">MEDICAID EXPANSION</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="choropleth.html">maps</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="collaborators.html">collaborators</a>
+        </li>
+      </ul>
     </div>
-    <script src="static/js/main.js"></script>
-  </body>
+  </nav> 
+
+  <!--Carousel Code-->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+      <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+      </ol> 
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <div class="overlay-image"><img src="medicare_bw.jpg" alt="First Slide"></div>
+      <div class="container">
+          <h1>Medicaid Expansion</h1>
+          <p>This website will allow you to browse through and find relevant Medicaid expansion and health insurance data for your state.</p>
+      </div>
+    </div>
+  <div class="carousel-item">
+    <div class="overlay-image"><img src="" alt="Second Slide"></div>
+    
+    <div class="container">
+        <h1>Medicaid Expansion</h1>
+        <p>This website will allow you to browse through and find relevant Medicaid expansion and health insurance data for your state.</p>  
+    </div>
+    </div>
+</div>
+
+<a href="#myCarousel" class="carousel-control-next" role="button" data-slide="next">
+    <span class="sr-only">Next</span>
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+</a>
+<a href="#myCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+    <span class="sr-only">Previous</span>
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+</div>
+
+<script src="static/js/main.js"></script>
+  
+
+<!--DropDown for Charts-->
+
+
+<div id="state-heading" class="container">
+  <div class="row align-items-center">
+    <div class="col-4">
+      <div class="dropdown show">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-8">
+      State Data
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
 </html>
