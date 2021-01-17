@@ -193,6 +193,13 @@ def getstate_dataPostgres():
         data.append(item)
     return jsonify(data)
 
+@app.route('/State')
+def dashboard():
+    return render_template('webapp.html')
+
+@app.route('State/<state_name>')
+def dashboard(state_name):
+     
 
 
 
