@@ -5,7 +5,7 @@ from os import environ
 app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = environ.get(
-    'DATABASE_URL', 'sqlite:///notepad.sqlite')
+    'DATABASE_URL', 'sqlite:///d6n2aueo5t3uht.sqlite')
 
 db = SQLAlchemy(app)
 
@@ -41,7 +41,7 @@ class insurance_cost(db.Model):
     insurance_type = db.Column(db.String)
     avg = db.Column(db.Float)
 
-class insurance_type_percent(db.Model):
+class coverage_type_percents(db.Model):
     State = db.Column(db.String(50), primary_key = True)
     Employer = db.Column(db.Float)
     Marketplace_Private = db.Column(db.Float)
@@ -57,16 +57,6 @@ class medicare_avg_costs(db.Model):
     avg_cost_ha_2013 = db.Column(db.Float)
 
 class percent_employees_off(db.Model):
-    state_name = db.Column(db.String(3), primary_key = True)
-    _2013 = db.Column(db.Float)
-    _2014 = db.Column(db.Float)
-    _2015 = db.Column(db.Float)
-    _2016 = db.Column(db.Float)
-    _2017 = db.Column(db.Float)
-    _2018 = db.Column(db.Float)
-    _2019 = db.Column(db.Float)
-
-class percent_enrolled_eligible(db.Model):
     state_name = db.Column(db.String(3), primary_key = True)
     _2013 = db.Column(db.Float)
     _2014 = db.Column(db.Float)
@@ -171,6 +161,14 @@ class avg_family_premium(db.Model):
 @app.route('/')
 def home():
     return render_template('index.html')
+
+@app.route('/choropleths')
+def heat_maps():
+    return render_template('choropleth.html')
+
+@app.route('/collaborators')
+def collaborators():
+    return render_template('collaborators.html')
     
 @app.route('/api/state-data-postgres')
 def getstate_dataPostgres():
@@ -178,32 +176,62 @@ def getstate_dataPostgres():
     data = []
     for state in State_Data:
         item = {
-            'state': state_data.State,
-            'expansion_status': state_data.Expansion_Status,
-            'date_added': state_data.Date_Added,
-            'median_income': state_data.Median_Income,
-            'state_spending': state_data.State_Spending,
-            'local_spending': state_data.Local_Spending,
-            'state_and_local_spending':state_data.State_and_Local_spending,
-            'population_millions': state_data.Population_Millions,
-            'uninsured_2010': state_data.Uninsured_2010,
-            'uninsured_2018': state_data.Uninsured_2018,
-            'uninsured_2019': state_data.Uninsured_2019
+            'state': State_Data.State,
+            'expansion_status': State_Data.Expansion_Status,
+            'date_added': State_Data.Date_Added,
+            'median_income': State_Data.Median_Income,
+            'state_spending': State_Data.State_Spending,
+            'local_spending': State_Data.Local_Spending,
+            'state_and_local_spending':State_Data.State_and_Local_spending,
+            'population_millions': State_Data.Population_Millions,
+            'uninsured_2010': State_Data.Uninsured_2010,
+            'uninsured_2018': State_Data.Uninsured_2018,
+            'uninsured_2019': State_Data.Uninsured_2019
         }
         data.append(item)
     return jsonify(data)
 
-@app.route('/State')
-def dashboard():
-    return render_template('webapp.html')
+@app.route('/api/coverage-type-postgres')
+def getcoverage_typePostgres():
+    Coverage_Type = db.session.query(coverage_type_percents)
+    data = []
+    for state in Coverage_Type:
+        item = {
+            'employer': Coverage_Type.Employer,
+            'marketplace_private': Coverage_Type.Marketplace_Private,
+            'medicaid': Coverage_Type.Medicaid,
+            'medicare': Coverage_Type.Medicare,
+            'uninsured': Coverage_Type.Uninsured
+        }
+        data.append(item)
+    return jsonify(data)
 
-@app.route('State/<state_name>')
-def dashboard(state_name):
+@app.route('/api/avg-family-contribution')
+def avg_f_c():
+    avg_f_c = db.session.query(avg_family_contribution)
+    data = []
+    for state in avg_f_c:
+        item = {
+            'state_name': avg_f_c.state_name,
+            '2013': avg_f_c._2013,
+            '2014': avg_f_c._2014,
+            '2015': avg_f_c._2015,
+            '2016': avg_f_c._2016,
+            '2017': avg_f_c._2017,
+            '2018': avg_f_c._2018,
+            '2019': avg_f_c._2019,
+        }
+        data.append(item)
+    return jsonify(data)
+
+
+#@app.route('/State')
+#def dashboard():
+#    return render_template('webapp.html')
+
+#@app.route('/State/<state_name>')
+#def dashboard(state_name):
      
-
-
-
-
 
 if __name__ == '__main__':
     app.run(debug=True)
