@@ -165,6 +165,10 @@ def home():
 @app.route('/choropleths')
 def heat_maps():
     return render_template('choropleth.html')
+
+@app.route('/collaborators')
+def collaborators():
+    return render_template('collaborators.html')
     
 @app.route('/api/state-data-postgres')
 def getstate_dataPostgres():
@@ -202,17 +206,32 @@ def getcoverage_typePostgres():
         data.append(item)
     return jsonify(data)
 
-@app.route('/State')
-def dashboard():
-    return render_template('webapp.html')
+@app.route('/api/avg-family-contribution')
+def avg_f_c():
+    avg_f_c = db.session.query(avg_family_contribution)
+    data = []
+    for state in avg_f_c:
+        item = {
+            'state_name': avg_f_c.state_name,
+            '2013': avg_f_c._2013,
+            '2014': avg_f_c._2014,
+            '2015': avg_f_c._2015,
+            '2016': avg_f_c._2016,
+            '2017': avg_f_c._2017,
+            '2018': avg_f_c._2018,
+            '2019': avg_f_c._2019,
+        }
+        data.append(item)
+    return jsonify(data)
 
-@app.route('State/<state_name>')
-def dashboard(state_name):
+
+#@app.route('/State')
+#def dashboard():
+#    return render_template('webapp.html')
+
+#@app.route('/State/<state_name>')
+#def dashboard(state_name):
      
-
-
-
-
 
 if __name__ == '__main__':
     app.run(debug=True)
