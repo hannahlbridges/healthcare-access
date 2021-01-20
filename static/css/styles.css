@@ -74,3 +74,39 @@ body {
 .top-buffer {
   margin-top: 20px;
 }
+
+.pic {
+  height: 300px;
+  width: auto;
+  margin:auto;
+  margin-left: 215px;
+  align-items: center;
+  margin-top: 10px;
+  opacity: 100%;
+}
+
+.bio {
+  font-size: small;
+  margin-left: 200px;
+  text-align: center;
+  display: inline;
+  
+}
+
+.cwill {
+  align-items: center;
+  margin: auto;
+  margin-left: 150px;
+  margin-top: 10px;
+  height: 300px;
+  width: 300px;
+}
+
+h6 {
+  color: white;
+  margin: 2px;
+  margin-left: 250px;
+
+}
+
+
