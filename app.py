@@ -343,9 +343,6 @@ def avg_family_contribution():
         }
         data.append(item)
     return jsonify(data)
-    
-if __name__ == '__main__':
-    app.run(debug=True)
 
 @app.route("/avg-family-premium")
 def avg_family_premium():
