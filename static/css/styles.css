@@ -25,6 +25,18 @@ body {
   padding-top: 0;
 }
 
+
+#map2,
+  body,
+  html {
+    height: 100%;
+  }
+
+  .leaflet-popup-content {
+    text-align: center;
+  }
+  
+
 .container {
   position: absolute;
   bottom: 0;
