@@ -1,10 +1,16 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
-var select = d3.select('#dropdown-menu').on("change", function() {
-    console.log(this);
-});
+// var select = d3.select('#dropdown-menu').on("change", function() {
+//     console.log(this);
+// });
 
+
+function getData() {
+    d3.json("/avg_single_contribution").then(data) => {
+        console.log(data);
+    };
+}
 //     options = select.selectALL('option').data(dd);
 
 // options.enter().append("option").text(function(d) { return d.state; });
