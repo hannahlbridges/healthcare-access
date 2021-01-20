@@ -42,7 +42,11 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-@app.route('/choropleths')
+@app.route('/HealthcareMaps')
+def HealthcareMapsMaker():
+    return render_template('HealthcareMaps.html')
+
+@app.route('/choropleth')
 def heat_maps():
     return render_template('choropleth.html')
 
